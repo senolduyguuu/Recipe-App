@@ -1,0 +1,47 @@
+.category-content {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  text-align: center;
+  flex-wrap: wrap; /* Önerilen ekleme: Ufak ekranlarda sıralanabilmesi için flex-wrap ekleyin */
+}
+
+.category-content-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0.5rem; /* Değiştirilen kısım: Ufak bir boşluk ekleyin */
+  text-decoration: none;
+  background: linear-gradient(35deg, rgb(32, 31, 31), rgb(76, 69, 69));
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+.category-content-text {
+  color: white;
+  font-size: 0.8rem;
+}
+
+svg {
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .category-content-li {
+    width: 4rem; /* Değiştirilen kısım: Ufak ekranlarda boyutu küçültün */
+    height: 4rem; /* Değiştirilen kısım: Ufak ekranlarda boyutu küçültün */
+  }
+
+  .category-content-text {
+    font-size: 0.7rem; /* Değiştirilen kısım: Yazı boyutunu küçültün */
+  }
+
+  svg {
+    font-size: 1.2rem; /* Değiştirilen kısım: simge boyutunu küçültün */
+  }
+}

@@ -1,0 +1,54 @@
+.recipe-container {
+  max-width: 800px;
+  margin: 5rem auto;
+}
+
+.recipe-content {
+  display: flex;
+}
+
+.recipe-image {
+  flex: 1;
+	margin-right: 10px;
+}
+
+.recipe-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobil Ekranlar İçin Ayarlar */
+@media screen and (max-width: 768px) {
+  .recipe-image img {
+    max-width: 100%; /* Önerilen değişiklik: Genişlik oranını 100% olarak ayarlayın */
+    height: auto; /* Önerilen değişiklik: Otomatik yükseklik ayarlayın */
+  }
+}
+
+
+.recipe-details {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.recipe-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.recipe-button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.recipe-button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.recipe-details h2 {
+  font-size: 1.5rem;
+}
